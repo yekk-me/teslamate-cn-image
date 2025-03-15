@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  teslamate:
+    image: docker.1ms.run/gococonut/teslamate:latest
+    restart: always
+    environment:
+      - ENCRYPTION_KEY=${TM_ENCRYPTION_KEY}
+      - DATABASE_USER=${TM_DB_USER}
+      - DATABASE_PASS=${TM_DB_PASSWORD}
+      - DATABASE_NAME=${TM_DB_NAME}
+      - DATABASE_HOST=${TM_DB_HOST}
+      - MQTT_HOST=${TM_MQTT_HOST}
+    ports:
+      - "${TM_PORT}:4000"
+    volumes:
+      - ./import:/opt/app/import
+    cap_drop:
+      - all
+
+  database:
+    image: docker.1ms.run/postgres:17
+    restart: always
+    environment:
+      - POSTGRES_USER=${TM_DB_USER}
+      - POSTGRES_PASSWORD=${TM_DB_PASSWORD}
+      - POSTGRES_DB=${TM_DB_NAME}
+    volumes:
+      - teslamate-db:/var/lib/postgresql/data
+
+  grafana:
+    image: docker.1ms.run/gococonut/grafana:latest
+    restart: always
+    environment:
+      - GF_DATABASE_USER=${TM_DB_USER}
+      - GF_DATABASE_PASSWORD=${TM_DB_PASSWORD}
+      - GF_DATABASE_NAME=${TM_DB_NAME}
+      - GF_DATABASE_HOST=${TM_DB_HOST}
+    ports:
+      - "${GF_PORT}:3000"
+    volumes:
+      - teslamate-grafana-data:/var/lib/grafana
+
+  mosquitto:
+    image: docker.1ms.run/eclipse-mosquitto:2
+    restart: always
+    command: mosquitto -c /mosquitto-no-auth.conf
+    volumes:
+      - mosquitto-conf:/mosquitto/config
+      - mosquitto-data:/mosquitto/data
+
+volumes:
+  teslamate-db:
+  teslamate-grafana-data:
+  mosquitto-conf:
+  mosquitto-data:
