@@ -3,7 +3,7 @@
 
 [![Docker Version](https://img.shields.io/badge/docker-%3E%3D%2020.10-brightgreen)](https://docs.docker.com/) 
 [![Map Proxy](https://img.shields.io/badge/map-proxy-brightgreen)](https://openstreetmap.org)
-[![GitHub stars](https://img.shields.io/github/stars/yourname/teslamate-cn-docker?style=social)](https://github.com/yourname/teslamate-cn-docker)
+[![GitHub stars](https://img.shields.io/github/stars/gococonut/teslamate-cn-docker?style=social)](https://github.com/yourname/teslamate-cn-docker)
 
 > 中国大陆可用的TeslaMate容器化方案 | TeslaMate Docker Solution for Mainland China
 
@@ -25,12 +25,12 @@
 ### 部署步骤 Deployment
 ```bash
 # 克隆仓库
-git clone https://github.com/yourname/teslamate-cn-docker.git
+git clone https://github.com/gococonut/teslamate-cn-docker.git
 cd teslamate-cn-docker
 
 # 配置环境变量
 cp .env.example .env
-nano .env  # 填写Tesla账户信息
+nano .env  # 修改环境变量
 
 # 启动服务
 docker-compose up -d
