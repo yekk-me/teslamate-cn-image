@@ -5,7 +5,7 @@
 [![Map Proxy](https://img.shields.io/badge/map-proxy-brightgreen)](https://openstreetmap.org)
 [![GitHub stars](https://img.shields.io/github/stars/gococonut/teslamate-cn-docker?style=social)](https://github.com/yourname/teslamate-cn-docker)
 
-> 中国大陆可用的TeslaMate容器化方案 | TeslaMate Docker Solution for Mainland China
+> 中国大陆可用的TeslaMate容器化方案 teslamate 汉化  teslamate 中文| TeslaMate Docker Solution for Mainland China
 
 
 ## 🌟 特性 Features
