@@ -1,5 +1,3 @@
-version: '3'
-
 services:
   teslamate:
     image: docker.1ms.run/gococonut/teslamate:latest
