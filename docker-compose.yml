@@ -30,10 +30,10 @@ services:
     image: docker.1ms.run/gococonut/grafana:latest
     restart: always
     environment:
-      - GF_DATABASE_USER=${TM_DB_USER}
-      - GF_DATABASE_PASSWORD=${TM_DB_PASSWORD}
-      - GF_DATABASE_NAME=${TM_DB_NAME}
-      - GF_DATABASE_HOST=${TM_DB_HOST}
+      - DATABASE_USER=${TM_DB_USER}
+      - DATABASE_PASS=${TM_DB_PASSWORD}
+      - DATABASE_NAME=${TM_DB_NAME}
+      - DATABASE_HOST=${TM_DB_HOST}
     ports:
       - "${GF_PORT}:3000"
     volumes:
