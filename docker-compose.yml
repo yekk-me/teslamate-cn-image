@@ -9,6 +9,7 @@ services:
       - DATABASE_NAME=${TM_DB_NAME}
       - DATABASE_HOST=${TM_DB_HOST}
       - MQTT_HOST=${TM_MQTT_HOST}
+      - BD_MAP_AK=${BD_MAP_AK}
     ports:
       - "${TM_PORT}:4000"
     volumes:
