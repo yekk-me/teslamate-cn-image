@@ -6,16 +6,14 @@
 [![Map Proxy](https://img.shields.io/badge/map-proxy-brightgreen)](https://openstreetmap.org)
 [![GitHub stars](https://img.shields.io/github/stars/gococonut/teslamate-cn-docker?style=social)](https://github.com/yourname/teslamate-cn-docker)
 
-> 中国大陆可用的 TeslaMate 容器化方案 teslamate 汉化 teslamate 中文| TeslaMate Docker Solution for Mainland China
+> 中国大陆可用的 TeslaMate 容器化方案 Teslamate 汉化 Teslamate 中文| TeslaMate Docker Solution for Mainland China
 
 ## 🌟 特性 Features
 
-- ✅ ​**完整汉化** - 界面/文档/时间格式全面中文化
+- ✅ ​**完整汉化** - 界面全面中文化
 - 🗺️ ​**地图访问** - 内置代理服务器解决 OpenStreetMap 访问问题
 - 🗺️ ​**百度地图** - 支持百度地址逆地址解析，车辆位置信息更精准
-- 🚀 ​**零外部依赖** - 无需第三方地图 API 密钥
-- 🐳 ​**一键部署** - Docker Compose 全自动配置
-- 📍 ​**区域优化** - 时区(Asia/Shanghai)/充电站名称/单位制式本地化
+- 🐳 ​**一键部署** - Docker Compose 一键部署
 
 ## 🚀 快速启动 Quick Start
 
