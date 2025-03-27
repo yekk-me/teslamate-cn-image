@@ -8,6 +8,8 @@
 
 > 中国大陆可用的 TeslaMate 容器化方案 Teslamate 汉化 Teslamate 中文| TeslaMate Docker Solution for Mainland China
 
+> [镜像 Repository](https://github.com/gococonut/teslamate)
+
 ## 🌟 特性 Features
 
 - ✅ ​**完整汉化** - 界面全面中文化
