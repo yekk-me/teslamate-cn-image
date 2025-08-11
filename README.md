@@ -12,18 +12,13 @@
 
 ## 🌟 特性 Features
 
-- ✅ ​**完整汉化** - 界面全面中文化
+- ✅ ​**完整汉化** - 界面全面中文化（汉化中）
 - 🗺️ ​**地图访问** - 内置代理服务器解决 OpenStreetMap 访问问题
 - 🗺️ ​**百度地图** - 支持百度地址逆地址解析，车辆位置信息更精准
 - 🐳 ​**一键部署** - Docker Compose 一键部署
 
 ## 🚀 快速启动 Quick Start
 
-### 前置要求 Prerequisites
-
-- Docker 20.10+
-- Docker Compose 2.12+
-- Tesla 账户 API 凭证
 
 ### 部署步骤 Deployment
 
