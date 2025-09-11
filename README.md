@@ -37,7 +37,7 @@ docker-compose up -d
 
 ### 
 
-想记录分析特斯拉数据？可以  https://portal.mytesla.cc/dashboard 体验一下，包含当前车辆状态，驾驶，停车，充电数据，电池健康度，并支持峰谷用电自动记录充电费用，车辆状态实时通知。
+想记录分析特斯拉数据？可以  https://portal.mytesla.cc/login 体验一下，包含当前车辆状态，驾驶，停车，充电数据，电池健康度，并支持峰谷用电自动记录充电费用，车辆状态实时通知。
 
 1️⃣ 新手用户：推荐即插即用的 Mytesla 数据伴侣，有问题随时问。 https://xhslink.com/m/4Vz6aOcb86w
 
