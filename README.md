@@ -19,20 +19,6 @@
 
 ## 🚀 快速启动 Quick Start
 
-### 部署步骤 Deployment
-
-```bash
-# 克隆仓库
-git clone https://github.com/gococonut/teslamate-cn-docker.git
-cd teslamate-cn-docker
-
-# 配置环境变量
-cp .env.example .env
-nano .env  # 修改环境变量
-
-# 启动服务
-docker-compose up -d
-```
 
 ### 云服务器一键部署
 
@@ -92,3 +78,19 @@ Mytesla UI 特色功能
 * **实时车辆监控**  电池状态实时显示  充电进度跟踪 位置信息监控
 * **数据分析**  详细的行驶数据分析  能耗统计报告  充电费用统计  峰谷用电充电自动计费
 * **通知提醒**  充电完成通知  行程完成通知  周期数据统计  更新提醒
+
+
+### 本地内网部署步骤 Deployment
+
+```bash
+# 克隆仓库
+git clone https://github.com/gococonut/teslamate-cn-docker.git
+cd teslamate-cn-docker
+
+# 配置环境变量
+cp .env.example .env
+nano .env  # 修改环境变量
+
+# 启动服务
+docker-compose up -d
+```
